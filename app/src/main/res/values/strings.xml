@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimeSystem</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="timesystem">TimeSystem</string>
+    <string name="Username">Username</string>
+    <string name="login">login</string>
+</resources>
