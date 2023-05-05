@@ -1,6 +1,8 @@
 package com.example.timesystem.Model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     String username;
     String password;
 
