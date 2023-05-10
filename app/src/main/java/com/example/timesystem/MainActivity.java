@@ -43,8 +43,11 @@ public class MainActivity extends AppCompatActivity
             String password= Objects.requireNonNull(pass.getEditText()).getText().toString();
             Log.d("Username", username);
             Log.d("Password", password);
+            User user=new User();
+            user.setUsername(username);
+            user.setPassword(password);
 
-            Call<LoginResponse>loginResponseCall=apiService.login(username,password);
+            Call<LoginResponse>loginResponseCall=apiService.login(user);
             loginResponseCall.enqueue(new Callback<LoginResponse>()
             {
                 @Override
